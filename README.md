@@ -6,11 +6,6 @@ Wave your hands.
 Wave your hands.  
 Have fun!
 
-# Play Demo
-[https://huhai463127310.github.io/posenet_fruit_ninja/](https://huhai463127310.github.io/posenet_fruit_ninja/)  
-  
-![Demo](posenet_fruit_ninja.gif)
-
 # Device Support
 Normal notebook computer or PC with web camera. 
 
