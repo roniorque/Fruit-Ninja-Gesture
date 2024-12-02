@@ -537,9 +537,9 @@
     async function bindPage() {
 
         // Load the PoseNet model weights with architecture 0.75
-        showInfo("正在加载 posenet 模型...");
+        showInfo("Loading the PoseNet model...");
         const net = await posenet.load(0.75);
-        showInfo("posenet 模型加载完毕");
+        showInfo("PoseNet model loaded successfully");
         guiState.net = net;
 
         // document.getElementById('loading').style.display = 'none';
@@ -553,17 +553,17 @@
         let video;
 
         try {
-            showInfo('正在加载视频设备...');
+            showInfo('Loading video device...');
             video = await loadVideo();
-            showInfo('视频设备加载完毕');
+            showInfo('Video device loaded successfully');
         } catch (e) {
             let info = document.getElementById('info');
-            info.textContent = '此浏览器不支持视频捕捉或者此设备没有摄像头';
+            info.textContent = 'This browser does not support video capture, or this device does not have a camera.';
             info.style.display = 'block';
             throw e;
         }
 
-        showInfo("开始检测姿势");
+        showInfo("Starting pose detection");
         detectPoseInRealTime(video, net);
     }
 

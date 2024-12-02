@@ -461,12 +461,12 @@ define("scripts/main.js", function(exports){
 	
 	    [ timeline, sence, control ].invoke( "init" );
 	
-	    log( "正在加载鼠标控制脚本" );
-	    log( "正在加载图像资源" );
-		log( "正在加载游戏脚本" );
-	    log( "正在加载剧情" );
-	    log( "正在初始化" );
-		log( "正在启动游戏..." );
+	    log( "Loading mouse control script..." );
+	    log( "Loading image resources..." );
+		log( "Loading game script..." );
+	    log( "Loading storyline..." );
+	    log( "Initializing..." );
+		log( "Starting the game..." );
 	    log.clear();
 	
 	    setTimeout( sence.switchSence.saturate( sence, "home-menu" ), 3000 );
@@ -509,10 +509,10 @@ define("scripts/main.js", function(exports){
 	var tip = "";
 	
 	if( !(Ucren.isChrome || Ucren.isFirefox))
-	    tip = "$<span style='color:red;font-size:16pt;padding:4px;'>浏览器不支持TensorFlow.js，请使用最新版本 <span class='b'>Google Chrome</span> 或 <span class='b'>Firefox</span> 体验本游戏</span>";
+	    tip = "$<span style='color:red;font-size:16pt;padding:4px;'>Your browser does not support TensorFlow.js. Please use the latest version of <span class='b'>Google Chrome</span> or <span class='b'>Firefox</span> to experience this game.</span>";
 	
 	if( !buzz.isSupported() )
-	    tip = tip.replace( "$", "您的浏览器不支持 &lt;audio&gt 播放声效，且" );
+	    tip = tip.replace( "$", "Your browser does not support &lt;audio&gt for sound effects，and " );
 	
 	tip = tip.replace( "$", "" );
 	

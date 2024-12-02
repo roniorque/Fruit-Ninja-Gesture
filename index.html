@@ -4,10 +4,10 @@
     <link rel="stylesheet" href="images/index.css"> 
     <title>Fruit Ninja Web Gesture Version</title>
     <!-- Load TensorFlow.js -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.11.7"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.11.7"></script>
     <script src="/posenet_fruit_ninja/@tensorflow/tfjs@0.13.1.js"></script>
     <!-- Load Posenet -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/posenet@0.1.2"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/posenet@0.1.2"></script> 
     <script src="/posenet_fruit_ninja/tfjs-models/posenet@0.2.3.js"></script>
  </head>
 
@@ -22,7 +22,7 @@
         <div id="browser"></div>
     </div>
     <div id="posenet" style="">
-      <!-- <div id="loading"></div> -->
+       <div id="loading"></div> 
       
       <div id="main" style="display:none;z-index:99999999;">
         <div style="width:160px; padding:4px; background-color: #ffffff;">
@@ -44,7 +44,7 @@
           </div>
           <button id="clear" type="button" style="width:160px;height:30px;">Clear Path</button>
         </div>
-        <canvas id="output"/>
+        <canvas id="output">
       </div>
     </div>
     <div id="info" style="font-size:12pt;color:#ffffff;"></div>
