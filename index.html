@@ -1,8 +1,8 @@
-<html lang="zh">
+<html lang="en">
   <head>
     <meta charset="UTF-8"/>
     <link rel="stylesheet" href="images/index.css"> 
-    <title>水果忍者网页体感版</title>
+    <title>Fruit Ninja Web Gesture Version</title>
     <!-- Load TensorFlow.js -->
     <!-- <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.11.7"></script> -->
     <script src="/posenet_fruit_ninja/@tensorflow/tfjs@0.13.1.js"></script>
@@ -13,8 +13,8 @@
 
   <body>
     <div style="width:100%;position:fixed;text-align:center;color:#ffffff;">
-        <p>保证摄像头处于未禁用状态，正对摄像头站立，保证左上角摄像头窗口可看见你的上半身，挥舞手臂，划掉New Game。</p>
-        <p>挥舞你的手！挥舞你的手！挥舞你的手！</p>
+        <p>Ensure your camera is not disabled. Stand facing the camera and ensure the upper half of your body is visible in the camera window at the top left corner. Wave your arms to slice through "New Game".</p>
+        <p>Wave your hand! Wave your hand! Wave your hand!</p>
     </div>
     <div id="extra"></div>
     <canvas id="view" width="640" height="480"></canvas>
@@ -27,8 +27,8 @@
       <div id="main" style="display:none;z-index:99999999;">
         <div style="width:160px; padding:4px; background-color: #ffffff;">
           <form>
-            <label><input type="radio" name="hand" value="left"/>左手</label>
-            <label><input type="radio" name="hand" value="right" checked="checked"/>右手</label>
+            <label><input type="radio" name="hand" value="left"/>Left Hand</label>
+            <label><input type="radio" name="hand" value="right" checked="checked"/>Right Hand</label>
           </form>
           <div style="position: relative;">
             <video id="video" playsinline style=" -moz-transform: scaleX(-1);
@@ -42,7 +42,7 @@
             </video>
             <canvas id="output_mini" width="160" height="120" style="display: block;position: absolute;top:0;"/>
           </div>
-          <button id="clear" type="button" style="width:160px;height:30px;">清除轨迹</button>
+          <button id="clear" type="button" style="width:160px;height:30px;">Clear Path</button>
         </div>
         <canvas id="output"/>
       </div>
