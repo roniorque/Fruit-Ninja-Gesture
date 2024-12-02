@@ -9,7 +9,7 @@ Have fun!
 # Play Demo
 [https://huhai463127310.github.io/posenet_fruit_ninja/](https://huhai463127310.github.io/posenet_fruit_ninja/)  
   
-![Demo动图](posenet_fruit_nijia.gif)
+![Demo](posenet_fruit_ninja.gif)
 
 # Device Support
 Normal notebook computer or PC with web camera. 
